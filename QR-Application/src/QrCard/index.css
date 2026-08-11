@@ -1,0 +1,38 @@
+.QR-img {
+  border-radius: 10px;
+  width: inherit;
+}
+.QR {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 1rem;
+  width: 13rem;
+  text-align: center;
+}
+.QRtextcontent {
+  padding: 1rem;
+}
+.QRtextcontent h1 {
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.QRtextcontent p {
+  font-size: 0.6rem;
+  color: rgb(169, 169, 169);
+}
+
+@media screen and (max-width: 768px) {
+  .QR {
+    width: 20rem;
+  }
+  .QRtextcontent h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+
+  .QRtextcontent p {
+    font-size: 1.3rem;
+    color: rgb(169, 169, 169);
+  }
+}

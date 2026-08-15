@@ -1,96 +1,116 @@
-# Frontend Mentor - QR code component solution
+# QR Code Component - Frontend Mentor
 
-This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+A simple, responsive QR code component built with React and Vite as part of the Frontend Mentor challenge.
 
-## Table of contents
+## 📋 Project Overview
 
-- [Overview](#overview)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-- [Author](#author)
+This project displays a clean, centered QR code card that encourages users to visit Frontend Mentor and improve their front-end development skills.
 
-## Overview
+## ✅ What's Been Done So Far
 
-### Screenshot
+### 1. **Project Setup**
 
-![QR Code Component Screenshot](./screenshot.jpg)
+- Initialized a React project using Vite as the build tool
+- Configured package.json with necessary dependencies and scripts
+- Set up ESLint for code quality and consistency
 
-A clean, centered QR code card component that displays a QR code image with accompanying text, encouraging users to visit Frontend Mentor and improve their coding skills.
+### 2. **Core Components**
 
-### Links
+- **App Component** (`src/App.jsx`): Main application component that serves as the container
+- **QrCard Component** (`src/QrCard/index.jsx`): Displays the QR code image with accompanying text content
 
-- Solution URL: [GitHub Repository](https://github.com/yourusername/qr-code-component)
-- Live Site URL: [Live Demo](https://your-live-site-url.com)
+### 3. **Styling**
 
-## My process
+- **App.css**: Styles the main background with a light blue color, centers content, and includes responsive design for mobile devices
+- **QrCard CSS** (`src/QrCard/index.css`): Styles the card component with:
+  - White background card with rounded corners
+  - QR code image with rounded borders
+  - Responsive typography (heading and description text)
+  - Mobile-first responsive design for screens up to 768px width
 
-### Built with
+### 4. **Responsive Design**
 
-- Semantic HTML5 markup
-- CSS3 with responsive design
-- Flexbox for layout
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Vite](https://vitejs.dev/) - Build tool and dev server
-- ESLint - Code quality
+- Desktop view: Card displays at 13rem width, centered on screen
+- Mobile view (max-width: 768px): Card expands to 20rem width with adjusted padding
+- Proper font sizing adjustments for different screen sizes
 
-### What I learned
+### 5. **Features**
 
-Through building this project, I reinforced my understanding of:
+- Displays QR code image from `images/image-qr-code.png`
+- Clean, readable heading and description text
+- Fully responsive layout that works on mobile and desktop
+- Professional styling with proper spacing and typography
 
-**React Component Structure:**
-```jsx
-const QrCard = () => (
-  <section className="QR">
-    <img src={imageqrcode} className="QR-img" />
-    <div className="QRtextcontent">
-      <h1>Improve your front-end skills by building projects</h1>
-      <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-    </div>
-  </section>
-);
+## 🛠️ Available Scripts
+
+- `npm run dev` - Start the development server
+- `npm run build` - Build for production
+- `npm run lint` - Run ESLint to check code quality
+- `npm run preview` - Preview the production build
+
+## 📦 Dependencies
+
+- **React** 19.2.8 - UI library
+- **React-DOM** 19.2.8 - DOM rendering
+
+## 🔧 Dev Dependencies
+
+- **Vite** 8.2.0 - Build tool and dev server
+- **ESLint** 10.8.0 - Code quality tool
+- **React Hooks ESLint Plugin** - React-specific linting rules
+- Other supporting dependencies for TypeScript support and React optimization
+
+## 🚀 Getting Started
+
+1. Install dependencies: `npm install`
+2. Start development server: `npm run dev`
+3. Open your browser and navigate to the provided local URL
+4. The QR code component will be displayed in the center of the screen
+
+## 📁 Project Structure
+
+```
+QR-Application/
+├── src/
+│   ├── App.jsx           # Main app component
+│   ├── App.css           # Global styles
+│   ├── main.jsx          # Entry point
+│   └── QrCard/
+│       ├── index.jsx     # QR card component
+│       └── index.css     # QR card styles
+├── images/               # Image assets
+├── package.json          # Project dependencies
+├── vite.config.js        # Vite configuration
+└── eslint.config.js      # ESLint configuration
 ```
 
-**Responsive CSS Design:**
-```css
-.QR {
-  padding: 1rem;
-  background-color: white;
-  border-radius: 1rem;
-  width: 13rem;
-  text-align: center;
-}
+## 🎨 Design Features
 
-@media screen and (max-width: 768px) {
-  .QR {
-    width: 20rem;
-  }
-}
-```
+- **Color Scheme**: Light blue background (#D3DCE6) with white card
+- **Typography**: Trebuchet MS, Lucida Sans stack for accessibility
+- **Spacing**: Consistent 1rem padding with proper alignment
+- **Borders**: 10px border radius on images, 1rem on cards for modern look
 
-Key learnings:
-- Building modular React components for better code organization
-- Implementing responsive design with media queries
-- Using Vite for fast development and optimized builds
-- Creating reusable CSS patterns with proper spacing and typography
-- Centering content using Flexbox on the main background
+## ✨ Next Steps (Future Enhancements)
 
-### Continued development
+- Add interactivity if needed
+- Implement additional QR code generation functionality
+- Add animations or transitions
+- Further accessibility improvements
 
-Areas I want to continue focusing on:
+1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community).
+2. Share on [X (formerly Twitter)](https://x.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in your post. We'd love to take a look at what you've built and help share it around.
+3. Share your solution on [LinkedIn](https://www.linkedin.com/company/frontend-mentor/).
+4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
 
-- Adding more interactive features (e.g., QR code scanning detection)
-- Implementing QR code generation from dynamic input
-- Adding smooth transitions and animations
-- Improving accessibility with ARIA labels and semantic HTML
-- Exploring CSS-in-JS solutions for component styling
-- Testing components with React Testing Library
+We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback.
 
-## Author
+The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- GitHub - [@yourusername](https://github.com/yourusername)
+## Got feedback for us?
+
+We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+
+This challenge is completely free. Please share it with anyone who will find it useful for practice.
+
+**Have fun building!** 🚀
